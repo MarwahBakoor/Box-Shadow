@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">  
+
+    <title>Box Shadow CSS Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <div  class="control">
+            <label for="points">Horizontal Shadow Length:</label>
+            <input id ='Horizontal' type="range" id="points" name="points" min="-200" max="200" value="10"  data-sizing="px"> 
+            <span data-type="Horizontal">10px</span>
+        </div>
+        <div class="control">
+            <label for="points">Vertical Shadow Lengths:</label>
+            <input id ='Vertical' type="range" id="points" name="points" min="-200" max="200" value="10"  data-sizing="px"> 
+            <span data-type="Vertical">10px</span>
+        </div>
+        <div class="control">
+            <label for="points">Blur Radius:</label>
+            <input id="Blur" type="range" id="points" name="points" min="0" max="200" value="10"  data-sizing="px"> 
+            <span data-type="Blur">10px</span>
+        </div>
+        <div class="control">
+            <label for="points">Spread Radius:</label>
+            <input id="Spread" type="range" id="points" name="points" min="-100" max="200" value="10"  data-sizing="px"> 
+            <span data-type="Spread">10px</span>
+        </div>
+        <div class="control">
+            <label for="points">Shadow Color:</label>
+            <input id="color" type="color" name="base" > 
+            <span data-type="color">rgb(0,0,0)</span>
+        </div>
+        <div class="control">
+            <label for="points">Shadow Color Opacity</label>
+            <input id="Opacity" type="range" id="points" name="points" min="0" step="0.05"  max="1" > 
+            <span data-type="Opacity">0.5</span>
+        </div>
+
+    
+    </div>
+
+    <div class="customize">
+        <div class="box">
+            <div class='text'>
+               <p> <b> box-shadow: </b> rgba(0, 0, 0, 0.5) 10px 10px 10px 10px; <br>
+                -webkit-box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px 10px;<br>
+                -moz-box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px 10px;
+            </p> 
+            </div>
+
+        </div>
+    </div>
+  
+    
+<script src="app.js"></script>
+</body>
+</html>
